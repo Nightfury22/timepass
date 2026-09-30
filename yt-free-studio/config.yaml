@@ -1,0 +1,31 @@
+# YouTube Free Studio Configuration
+
+# Output directory where generated assets and runs will be stored
+output_dir: "output"
+
+# Image generation settings
+image:
+  width: 1024
+  height: 1024
+  model: "flux"  # for Pollinations
+  # Backup model for Hugging Face is set in the code
+
+# TTS settings
+tts:
+  # Default voices per language (can be overridden)
+  voices:
+    en: "en-US-JennyNeural"
+    ta: "ta-IN-PallaviNeural"
+
+# Video settings
+video:
+  # Default format if not specified
+  default_format: "short"
+  # Default language if not specified
+  default_language: "en"
+  # Scene durations (can be overridden by script agent)
+  short_format_duration_sec: 60
+  long_format_duration_sec: 600
+
+# Other settings
+debug: false
